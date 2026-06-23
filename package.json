@@ -1,0 +1,37 @@
+{
+  "name": "browser-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that controls a real Chrome/Edge browser via a companion extension — no headless, no WebDriver, no Selenium required",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoguangpan/browser-mcp"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "npx tsx mcp-server.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "browser",
+    "chrome",
+    "edge",
+    "automation",
+    "cdp",
+    "chrome-devtools-protocol"
+  ],
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
