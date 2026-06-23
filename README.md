@@ -32,7 +32,7 @@ Chrome 扩展 (service worker)
 
 ### 1. 加载 Chrome/Edge 扩展
 
-1. 打开 Edge → `edge://extensions/`（Chrome 用 `chrome://extensions/`）
+1. 打开 Chrome → `chrome://extensions/`（Edge 用 `edge://extensions/`）
 2. 打开"开发人员模式"
 3. "加载解压缩的扩展" → 选择 `extensions/tmwd-cdp-bridge` 目录
 
@@ -166,8 +166,6 @@ evaluate(code: "JSON.stringify([...document.querySelectorAll('a')].map(a => ({te
 | screenshot | 60-105 ms |
 | navigate | 300-3600 ms（网络开销）|
 | open_tab | 3-5 ms |
-
-非导航操作均 <100ms。AI 推理延迟（0.5-3s）才是"感觉慢"的主因。
 
 ## 贡献
 
